@@ -1,0 +1,50 @@
+\documentclass{article}
+% in order to include figures, we need to introduce some packages
+\usepackage{graphicx}    % the old version is called "graphics"
+\usepackage{subfig}        % allows subfigure environment
+% \usepackage{graphicx, subfig}
+\begin{document}
+% table and figures are "environments" in LaTeX
+% environments need a "begin" and "end"
+
+
+                      % specify locations
+\begin{figure}[!h]
+\begin{center}    % center environment
+% ! = overrides LaTeX preferences; h = here; t = top; b = bottom; p = special page for floats (floating objects)
+% if leave the location blank, h is the default
+\includegraphics[angle=45,width=.8\textwidth]{Stardew_Main_Logo}
+\caption{A great and cheap game!}
+% \includegraphics[angle,dimensions]{filename}
+% it is okay to set dimensions like width=5in or width=10cm
+% but better make is dynamic
+\label{fig:logo}
+% setting reference to this figure by create a label inside the figure environment.
+
+
+%% subfloat is part of package "subfig"
+%% \subfloat[caption]{\label{fig:XXX}
+%% \includegraphics[angle,dimension]{filename}
+%% }
+%% using \quad to separate figures horizontally(?)
+\subfloat[Logo]{\label{fig:horizon1}
+\includegraphics[width=1\textwidth]{Horizon_logo}
+}\\
+\subfloat{\label{fig:horizon2}
+\includegraphics[width=.5\textwidth]{horizon_zero_dawn_stormbird_guerrilla}
+}
+\subfloat{\label{fig:horizon3}
+\includegraphics[width=.5\textwidth]{target_practice}
+}
+\caption{Horizon Zero Dawn}
+\end{center}
+\end{figure}
+
+\section{Figure}
+I have included a figure to explain, please see figure \ref{fig:logo}, \ref{fig:horizon1}
+
+
+
+
+
+\end{document}

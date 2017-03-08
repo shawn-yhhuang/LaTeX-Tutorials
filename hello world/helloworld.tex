@@ -1,0 +1,71 @@
+\documentclass{article} % letter , article, report, book,, memoir, macthesis
+
+% PREAMBLE
+\author{Shawn Huang}
+\title{The First LaTeX Article}
+\date{June 25, 2016}
+
+% CONTENT
+\begin{document}
+
+\maketitle % it prints the preamble content onto pdf
+\newpage % it creates a new page
+
+
+\begin{abstract}
+helloworld is often the first example used in programming practice.
+\end{abstract}
+
+
+Hello, world
+It's the first LaTeX document\\              % \\ double backslash 換行
+try me!
+
+New paragraph here! % empty line 分段（換行與分段的差別在indentation）
+
+
+
+\section{Introduction}
+
+\section{Methods}\label{sec:method}           % 加上label以供之後參照
+                                                                     % 第一次跑會出現warning說要再跑一次才能重建label
+                                                                     % so just run it one more time
+\section{Procedure}
+\subsection{Simulation}
+\subsubsection{Tricky Math}
+
+\section{Results}
+Please see section \ref{sec:method}.          % 參照過去標注的label
+\section{Discussion}
+
+\section{Conclusion}
+
+
+
+%% Citation tutorial using BibTex
+\cite{Konar:2013aa} have found some interesting results.          % .bib in the same directory
+\\
+\cite{doi:10.1108/01439910310457706} have great results!       % .bib in different directory
+%  Steps for typesetting documents with BibTex
+% 1) Run LaTeX  (will see some warnings)
+% 2) Run BibTex  (two file will be created (.bbl and .blg), and no warnings this time)
+% 3) Run LaTeX   (Citations are added but the references are not show correctly. Still show warnings.)
+% 4) Run LaTeX   (Everything is correct)
+
+
+%% bibliography need two lines
+%% one is "bibliographystyle"
+%% second is "bibliography"
+\bibliographystyle{ieeetr}     % acm, ieeetr, apalike, and so on.
+                                            % find on more in Google or the not so short Introduction to LaTeX
+\bibliography{./bib_in_diff_folder/helloworld2,helloworld}
+% refer to the .bib file (in the same directory)
+% specify the folder name to refer to .bib in different directory. Go up in folder with a single dot.
+
+
+
+
+
+
+
+\end{document}

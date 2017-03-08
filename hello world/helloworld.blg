@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: helloworld.aux
+The style file: ieeetr.bst
+Database file #1: ./bib_in_diff_folder/helloworld2.bib
+Database file #2: helloworld.bib
+You've used 2 entries,
+            1876 wiz_defined-function locations,
+            493 strings with 3854 characters,
+and the built_in function-call counts, 595 in all, are:
+= -- 59
+> -- 19
+< -- 0
++ -- 7
+- -- 5
+* -- 45
+:= -- 91
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 29
+empty$ -- 53
+format.name$ -- 5
+if$ -- 146
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 9
+num.names$ -- 2
+pop$ -- 2
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 24
+stack$ -- 0
+substring$ -- 40
+swap$ -- 14
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 6
+width$ -- 3
+write$ -- 23

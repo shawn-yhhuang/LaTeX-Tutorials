@@ -1,0 +1,33 @@
+%% elsarticle class is created for authors so that they can encorporate special formats for journals of some else articles.
+\documentclass[preprint,authoryear]{elsarticle}
+\DeclareGraphicsExtentions{.pdf,.gif,.jpg}  % tells LaTeX what kinds of files to expect for your figures
+
+%-------------------------------------------------------------------------------
+%% Useful packages in writting a papar or journal
+\usepackage{amssymb}   % allows to use Rho and other math symbols
+\usepackage{graphicx}  % include figures/images in a document
+\usepackage{lineno}    % for numbering the lines
+\usepackage{lscape}    % use landscape pages in document
+\usepackage{natbib}    % bibliography package in LaTeX
+\usepackage{subfig}    % allows for the use of subfigures
+%\usepackage[colorlinks=true]{hyperref}    % provides hyperreferencing within the PDF file
+\usepackage{change}    % allows text highlighting
+%-------------------------------------------------------------------------------
+%% Used with "changes" package
+%% \definechangesauthor[name]{id}{colorsettings}
+\definechangesauthor[Yen-Hsiang Huang]{YHH}{red!80!white}
+\definechangesauthor[Wei-Hong Hong]{WHH}{blue!80!white}
+\definechangesauthor[True-Yun Huang]{TYH}{green!80!black}
+
+%% Define authors using the "changes" package, and add emphasis
+\newcommand{\yhh}[1]{\emph{\added[YHH]{#1}}}
+\newcommand{\whh}[1]{\emph{\added[WHH]{#1}}}
+\newcommand{\tyh}[1]{\emph{\added[TYH]{#1}}}
+
+\newcommand{\yhhd}[1]{\emph{\deleted[YHH]{#1}}}
+\newcommand{\whhd}[1]{\emph{\deleted[WHH]{#1}}}
+\newcommand{\tyhd}[1]{\emph{\deleted[TYH]{#1}}}
+%-------------------------------------------------------------------------------
+
+
+
